@@ -52,11 +52,12 @@ For ubuntu
 - Check Resources 
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/10.png)
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/11.png)
-![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/12.png)
+
 
 ### 6- Create Deployment Using Helm Chart Package
 - Clean Created Resources
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/15.png)
+
 - Steps To Create Helm Chart From Kubernetes Resources
 1- Run ` helm create my-helm-chart ` in your working dir.
 
@@ -69,7 +70,7 @@ For ubuntu
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/12.png)
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/13.png)
 
-4- Checking chart by run `helm lint {NAME_OF_CHART} that has no errors.
+4- Checking chart by run `helm lint {NAME_OF_CHART}` that has no errors.
 
 5- Deploy by run `helm install {NAME} {CHART}`
 
@@ -81,4 +82,4 @@ For ubuntu
 
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/18.png)
 
-# ([Link](http://34.132.64.90/)
+# ([Demo](http://34.132.64.90/))
