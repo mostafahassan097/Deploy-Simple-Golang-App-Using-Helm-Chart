@@ -19,14 +19,15 @@ For ubuntu
 # Steps To Deploy App On K8s Cluster
 ###  1- Clone the Repo
 ```
-       git clone git@github.com:mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster.git
-       cd Deploy-Simple-Golang-App-On-K8s-Cluster
+      (1) git clone git@github.com:mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster.git
+      
+      (2) cd Deploy-Simple-Golang-App-On-K8s-Cluster
 ```
 ###  2- Dockerize  Steps
 ```
-     docker build -t {docker_id}/golang-webapp .
+     docker build -t {docker_id}/go-web-app:v1 .
      docker login
-     docker push {docker_id}/golang-webapp
+     docker push {docker_id}/go-web-app:v1
 ```
 ###  3- Create GKE Cluster On GCP as Shown Below
 #### Kubernetes Engine > Clusters > Create > Configure Standard
