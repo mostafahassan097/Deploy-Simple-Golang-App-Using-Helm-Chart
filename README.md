@@ -8,20 +8,20 @@
 - Make sure you have gcloud cli tool if you will use GKE as K8s Cluster ([Link](https://cloud.google.com/sdk/docs/install#deb)).
 ```
 For ubuntu
- 1- curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
- 2- sudo apt-get install apt-transport-https --yes
- 3- echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
- 4- sudo apt-get update
- 5- sudo apt-get install helm
+ curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
+ sudo apt-get install apt-transport-https --yes
+ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/helm.gpg] https://baltocdn.com/helm/stable/debian/ all main" | sudo tee /etc/apt/sources.list.d/helm-stable-debian.list
+ sudo apt-get update
+ sudo apt-get install helm
  ```
 
 
 # Steps To Deploy App On K8s Cluster
 ###  1- Clone the Repo
 ```
-      (1) git clone git@github.com:mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster.git
+       git clone git@github.com:mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster.git
       
-      (2) cd Deploy-Simple-Golang-App-On-K8s-Cluster
+       cd Deploy-Simple-Golang-App-On-K8s-Cluster
 ```
 ###  2- Dockerize  Steps
 ```
@@ -46,9 +46,9 @@ For ubuntu
 
 ### 5- Create K8s Resources by K8s yaml files
 ```sh
-(1)  cd Kubernetes
-(2)  kubectl apply -f  go-web-deploy.yaml # Deployment 
-(3)  kubectl apply -f  go-lb-service.yaml # Service
+ cd Kubernetes
+ kubectl apply -f  go-web-deploy.yaml # Deployment 
+ kubectl apply -f  go-lb-service.yaml # Service
 ```
 - Check Resources 
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/10.png)
@@ -60,6 +60,7 @@ For ubuntu
 ![App Screenshot](https://github.com/mostafahassan097/Deploy-Simple-Golang-App-On-K8s-Cluster/blob/main/Screenshots/15.png)
 
 - Steps To Create Helm Chart From Kubernetes Resources
+
 1- Run ` helm create my-helm-chart ` in your working dir.
 
 2- Then  run ` cd my-helm-chart/templates `
