@@ -4,8 +4,7 @@
 - Make sure that have your own setup of K8s cluster on any cloud provider i will use GCP GKE.
 - You have docker on your local setup ([Link](https://docs.docker.com/engine/install/ubuntu/)).
 - Install kubectl on local setup by this command ``` sudo apt-get install kubectl ```
-- Make sure that you helm on your local setup  ([Link](https://helm.sh/docs/intro/install/)).
-- Make sure you have gcloud cli tool if you will use GKE as K8s Cluster ([Link](https://cloud.google.com/sdk/docs/install#deb)).
+- Make sure that you have helm on your local setup  ([Link](https://helm.sh/docs/intro/install/)).
 ```
 For ubuntu
  curl https://baltocdn.com/helm/signing.asc | gpg --dearmor | sudo tee /usr/share/keyrings/helm.gpg > /dev/null
@@ -14,6 +13,8 @@ For ubuntu
  sudo apt-get update
  sudo apt-get install helm
  ```
+- Make sure you have gcloud cli tool if you will use GKE as K8s Cluster ([Link](https://cloud.google.com/sdk/docs/install#deb)).
+
 
 
 # Steps To Deploy App On K8s Cluster
